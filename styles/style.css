@@ -98,10 +98,12 @@ a br {
   body {
     padding: 15px;
   }
+
   .info {
     margin: 0;
     white-space: inherit;
   }
+
   .video {
     position: relative;
     right: auto !important;
@@ -110,15 +112,19 @@ a br {
     margin-bottom: 150px !important;
     max-width: 440px !important;
   }
+
   .about_popup {
     margin-left: 0;
   }
+
   .about_credits {
     display: block;
   }
+
   .left_col {
     margin-bottom: 70px;
   }
+
   .close_btn {
     display: block;
     text-align: right;
@@ -130,18 +136,23 @@ a br {
     font-size: 15pt;
     line-height: 18pt;
   }
+
   .about_credits {
     max-width: 280px;
   }
+
   .about_text {
     max-width: 684px;
   }
+
   .check {
     max-width: 15px;
   }
+
   .logo img {
     min-width: 290px;
   }
+
   .video {
     right: 50px;
     bottom: 60px;
@@ -154,26 +165,33 @@ a br {
     max-width: 190px;
   }
 }
+
 @media (min-width: 3280px) {
   body {
     line-height: 100px;
     font-size: 72px;
   }
+  
   .about_popup {
     max-width: 2010px;
   }
+  
   .about_credits {
     max-width: 1040px;
   }
+  
   .check {
     max-width: 52px;
   }
+  
   .logo {
     width: 100%;
   }
+  
   .logo img {
     max-width: 800px;
   }
+  
   .video {
     max-width: 800px;
   }
