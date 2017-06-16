@@ -24,6 +24,8 @@ a br {
   position: absolute;
   left: 50%;
   top: 50%;
+  width: 100%;
+  max-width: 400px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   -webkit-user-select: none;
@@ -35,8 +37,6 @@ a br {
 .logo img {
   position: relative;
   display: block;
-  max-width: 400px;
-  min-width: 250px;
   width: 100%;
   margin: auto;
 }
@@ -153,8 +153,8 @@ a br {
     max-width: 15px;
   }
 
-  .logo img {
-    min-width: 240px;
+  .logo {
+    max-width: 240px;
   }
 
   .video {
@@ -189,10 +189,6 @@ a br {
   }
 
   .logo {
-    width: 100%;
-  }
-
-  .logo img {
     max-width: 800px;
   }
 
