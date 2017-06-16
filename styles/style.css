@@ -112,7 +112,7 @@ a br {
     position: relative;
     right: auto !important;
     bottom: auto !important;
-    margin-top: 300px !important;
+    margin-top: 90% !important;
     margin-bottom: 150px !important;
     max-width: 440px !important;
   }
@@ -198,5 +198,21 @@ a br {
 
   .video {
     max-width: 800px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
+  a br {
+    display: block;
+  }
+  .video {
+    margin: 220px 15px 60px 15px;
+    max-width: 400px;
+    right: auto;
+    bottom: auto;
+    position: relative;
+  }
+  .logo {
+    position: fixed;
   }
 }
