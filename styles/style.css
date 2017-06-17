@@ -15,8 +15,11 @@ a br {
   display: none;
 }
 
+.main {
+  padding: 15px;
+}
+
 .info {
-  margin: 15px 0 0 15px;
   position: relative;
 }
 
@@ -56,9 +59,8 @@ a br {
 
 .about_popup {
   position: relative;
-  max-width: 880px;
   width: 100%;
-  margin: 70px 0 0 15px;
+  margin: 70px 0 0 0;
   display: none;
 }
 
@@ -89,6 +91,12 @@ a br {
   display: none;
 }
 
+@media (max-width: 321px) {
+  .location {
+    max-width: 230px !important;
+  }
+}
+
 @media (max-width: 370px) {
   a br {
     display: block;
@@ -96,10 +104,6 @@ a br {
 }
 
 @media (max-width: 430px) {
-  body {
-    padding: 15px;
-  }
-
   .info {
     margin: 0;
     white-space: inherit;
@@ -122,6 +126,10 @@ a br {
     margin-left: 0;
   }
 
+  .location {
+    max-width: 370px;
+  }
+
   .about_credits {
     display: block;
   }
@@ -140,10 +148,6 @@ a br {
   body {
     font-size: 15pt;
     line-height: 18pt;
-  }
-
-  .about_credits {
-    max-width: 280px;
   }
 
   .about_text {
@@ -173,7 +177,7 @@ a br {
   }
 }
 
-@media (max-width: 630px) and (min-width: 431px) and (orientation: vertical) {
+@media (max-width: 630px) and (min-width: 431px) {
   .video {
     position: absolute;
     left: 50%;
@@ -186,15 +190,12 @@ a br {
 }
 
 @media (max-width: 768px) {
-  /*.video {
-    max-width: 190px;
-  }*/
   a br {
     display: block;
   }
-  /*body {
-    overflow: hidden;
-  }*/
+  .location {
+    max-width: 390px;
+  }
   .about_text {
     margin-right: 15px;
   }
@@ -227,16 +228,35 @@ a br {
   }
 }
 
-@media (orientation: landscape) and (max-height: 415px) {
-  a br {
+@media (max-width: 1024px) {
+  .about_credits {
     display: block;
+    max-width: none;
   }
+
+  .left_col {
+    margin-bottom: 70px;
+  }
+
+  .close_btn {
+    display: block;
+    text-align: right;
+    margin: 70px 0 20px 0;
+}
+
+@media (orientation: landscape) and (max-height: 415px) {
   .video {
     margin: 220px 15px 60px 15px;
     max-width: 400px;
     right: auto;
+    left: auto;
+    top: auto;
     bottom: auto;
     position: relative;
+    transform: translate(0,0);
+  }
+  .location {
+    max-width: 370px;
   }
   .logo {
     position: fixed;
