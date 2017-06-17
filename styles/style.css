@@ -108,8 +108,8 @@ a br {
 
 @media (max-width: 670px) and (orientation: landscape) {
   body, div, a, .contacts, .about_text, .about_credits {
-    font-size: 13pt !important;
-    line-height: 15pt !important;
+    font-size: 17px !important;
+    line-height: 21px !important;
   }
 }
 
