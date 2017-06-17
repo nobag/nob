@@ -32,6 +32,7 @@ a br {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 11;
 }
 
 .logo img {
@@ -157,16 +158,45 @@ a br {
     max-width: 240px;
   }
 
-  .video {
+  /*.video {
     right: 50px;
     bottom: 60px;
     max-width: 240px;
+  }*/
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .video {
+    right: 50px;
+    bottom: 45px;
+    max-width: 350px;
   }
 }
 
-@media (max-width: 768px) and (max-height: 1024px) {
+@media (max-width: 630px) and (min-width: 431px) and (orientation: vertical) {
   .video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  /*.video {
     max-width: 190px;
+  }*/
+  a br {
+    display: block;
+  }
+  /*body {
+    overflow: hidden;
+  }*/
+  .about_text {
+    margin-right: 15px;
   }
 }
 
