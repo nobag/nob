@@ -4,9 +4,13 @@ body {
   margin: 0;
 }
 
-body, div, a {
+body, div, a, p {
   font-size: 1.02em !important;
   line-height: 1.2em !important;
+}
+
+p {
+  margin: 0;
 }
 
 a {
