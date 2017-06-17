@@ -2,9 +2,9 @@ body {
   font-family: 'Times New Roman';
   padding: 0;
   margin: 0;
-  moz-text-size-adjust: 50%;
-  -webkit-text-size-adjust: 50%;
-  -ms-text-size-adjust: 50%;
+  moz-text-size-adjust: 110%;
+  -webkit-text-size-adjust: 110%;
+  -ms-text-size-adjust: 110%;
 }
 
 body, div, a, p {
