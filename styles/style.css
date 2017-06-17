@@ -103,6 +103,13 @@ a br {
   }
 }
 
+@media (max-width: 670px) and (orientation: landscape) {
+  body {
+    font-size: 13pt !important;
+    line-height: 15pt !important;
+  }
+}
+
 @media (max-width: 430px) {
   .info {
     margin: 0;
