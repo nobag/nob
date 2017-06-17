@@ -107,7 +107,7 @@ a br {
 }
 
 @media (max-width: 670px) and (orientation: landscape) {
-  body, div, a {
+  body, div, a, .contacts, .about_text, .about_credits {
     font-size: 13pt !important;
     line-height: 15pt !important;
   }
@@ -121,6 +121,7 @@ a br {
 
   .logo {
     position: fixed;
+    max-width: 240px;
   }
 
   .video {
@@ -168,10 +169,6 @@ a br {
     max-width: 15px;
   }
 
-  .logo {
-    max-width: 240px;
-  }
-
   /*.video {
     right: 50px;
     bottom: 60px;
@@ -184,6 +181,9 @@ a br {
     right: 50px;
     bottom: 45px;
     max-width: 350px;
+  }
+  .logo {
+    max-width: 240px;
   }
 }
 
