@@ -2,9 +2,9 @@ body {
   font-family: 'Times New Roman';
   padding: 0;
   margin: 0;
-  moz-text-size-adjust: none; 
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
+  moz-text-size-adjust: 50%;
+  -webkit-text-size-adjust: 50%;
+  -ms-text-size-adjust: 50%;
 }
 
 body, div, a, p {
@@ -118,6 +118,14 @@ a br {
     font-size: 17px !important;
     line-height: 21px !important;
   }*/
+}
+
+@media (max-height: 750px) {
+  .video {
+    max-width: 300px;
+    right: 50px;
+    bottom: 40px;
+  }
 }
 
 @media (max-width: 430px) {
