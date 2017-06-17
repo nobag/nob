@@ -111,6 +111,12 @@ a br {
   }
 }
 
+@media (max-width: 375px) {
+  .location {
+    max-width: 290px !important;
+  }
+}
+
 @media (max-width: 670px) and (orientation: landscape) {
   /*body, div, a, .contacts, .about_text, .about_credits, .info, .location {
     font-size: 17px !important;
@@ -118,9 +124,15 @@ a br {
   }*/
 }
 
-@media (max-height: 750px) {
+@media (max-height: 720px) {
   .video {
     max-width: 300px;
+  }
+}
+
+@media (max-height: 890px) {
+  .video {
+    max-width: 350px;
     right: 50px;
     bottom: 40px;
   }
@@ -178,14 +190,15 @@ a br {
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
-  .video {
-    right: 50px;
-    bottom: 45px;
-    max-width: 350px;
+@media (max-width: 785px) {
+  .location {
+    max-width: 560px;
   }
-  .logo {
-    max-width: 240px;
+}
+
+@media (max-height: 740px) and (min-height: 651px) {
+  .video {
+    max-width: 300px !important;
   }
 }
 
@@ -204,9 +217,6 @@ a br {
 @media (max-width: 768px) {
   a br {
     display: block;
-  }
-  .location {
-    max-width: 290px;
   }
   .about_text {
     margin-right: 15px;
@@ -254,9 +264,10 @@ a br {
     display: block;
     text-align: right;
     margin: 70px 0 20px 0;
+  }
 }
 
-@media (orientation: landscape) and (max-height: 415px) {
+@media (orientation: landscape) and (max-height: 650px) {
   .video {
     margin: 220px 15px 60px 15px;
     max-width: 400px;
