@@ -122,7 +122,6 @@ a br {
 
 @media (max-height: 890px) {
   .video {
-    max-width: 350px;
     right: 50px;
     bottom: 40px;
   }
@@ -149,7 +148,6 @@ a br {
     bottom: auto !important;
     margin-top: 90% !important;
     margin-bottom: 150px !important;
-    max-width: 440px !important;
   }
 
   .about_popup {
@@ -268,7 +266,6 @@ a br {
 @media (orientation: landscape) and (max-height: 650px) {
   .video {
     margin: 220px 15px 60px 15px;
-    max-width: 400px;
     right: auto;
     left: auto;
     top: auto;
