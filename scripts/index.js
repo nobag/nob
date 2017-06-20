@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Linux armv6l') {
     logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
-    window.onscroll = function() {
-      logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
-    }
+    // window.onscroll = function() {
+    //   logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
+    // }
   }
 });
