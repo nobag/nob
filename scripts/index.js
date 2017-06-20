@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
       close = document.querySelector('.close_btn');
 
   close.addEventListener('click', function () {
-    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
-    video.style.display = video.style.display === 'none' ? '' : 'none';
+    popup.style.display = 'none';
+    video.style.display = 'block';
   })
 
   about.addEventListener('click', function () {
-    popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
-    video.style.display = video.style.display === 'none' ? '' : 'none';
+    popup.style.display = 'block';
+    video.style.display = 'none';
   });
 });

@@ -34,7 +34,7 @@ a br {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   width: 100%;
@@ -72,20 +72,20 @@ a br {
   width: 100%;
   margin: 70px 0 0 0;
   display: none;
+  max-width: 691px;
 }
 
 .about_text {
   margin-bottom: 70px;
-  max-width: 695px;
 }
 
-#about_button:hover {
+#about_button:hover, .close_btn:hover {
   cursor: pointer;
 }
 
 .check {
   position: relative;
-  max-width: 19px;
+  max-width: 17px;
   width: 100%;
   margin: 0;
 }
@@ -99,7 +99,7 @@ a br {
 }
 
 .close_btn {
-  display: none;
+  text-align: right;
 }
 
 @media (max-height: 340px) {
@@ -165,21 +165,6 @@ a br {
   .left_col {
     margin-bottom: 70px;
   }
-
-  .close_btn {
-    display: block;
-    text-align: right;
-    margin: 70px 0 20px 0;
-  }
-}
-@media (max-width: 1480px) {
-  .about_text {
-    max-width: 684px;
-  }
-
-  .check {
-    max-width: 15px;
-  }
 }
 
 @media (max-width: 785px) {
@@ -191,6 +176,12 @@ a br {
 @media (max-height: 740px) and (min-height: 651px) {
   .video {
     max-width: 300px !important;
+  }
+}
+
+@media (max-width: 625px) {
+  .location {
+    max-width: 460px;
   }
 }
 
@@ -209,9 +200,6 @@ a br {
 @media (max-width: 768px) {
   a br {
     display: block;
-  }
-  .about_text {
-    margin-right: 15px;
   }
 }
 
@@ -259,7 +247,7 @@ a br {
   .close_btn {
     display: block;
     text-align: right;
-    margin: 70px 0 20px 0;
+    margin: 0 0 20px 0;
   }
 }
 
