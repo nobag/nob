@@ -33,7 +33,8 @@ a br {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
+  display: inline-block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -48,11 +49,12 @@ a br {
   z-index: 11;
 }
 
-.logo img {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: auto;
+.logo:after {
+    content: "";
+    width: 340px;
+    height: 80px;
+    background: url("../media/nob.svg") no-repeat;
+    display: inline-block;
 }
 
 .video {
@@ -142,6 +144,11 @@ a br {
     max-width: 240px;
   }
 
+  .logo:after {
+      width: 240px;
+      height: 60px;
+  }
+
   .video {
     position: relative;
     right: auto !important;
@@ -227,6 +234,11 @@ a br {
 
   .logo {
     max-width: 800px;
+  }
+
+  .logo:after {
+      width: 800px;
+      height: 190px;
   }
 
   .video {
