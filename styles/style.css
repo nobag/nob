@@ -32,11 +32,12 @@ a br {
   position: relative;
 }
 
-/*.logo {
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all .3s ease-in-out;
   width: 100%;
   width: 340px;
   pointer-events: none;
@@ -45,16 +46,6 @@ a br {
   -ms-user-select: none;
   user-select: none;
   z-index: 11;
-}*/
-
-.logo {
-    height: 80px;
-    width: 340px;
-    margin: -40px 0 0 -170px;
-    top: 50%;
-    left: 50%;
-    position: fixed;
-    z-index: 11;
 }
 
 .logo img {
