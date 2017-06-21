@@ -100,10 +100,6 @@ a br {
   justify-content: space-between;
 }
 
-.close_btn {
-  text-align: right;
-}
-
 @media (max-height: 340px) {
   a br {
     display: block;
@@ -258,7 +254,6 @@ a br {
 
   .close_btn {
     display: block;
-    text-align: right;
     margin: 0 0 20px 0;
   }
 }
