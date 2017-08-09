@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
   close.addEventListener('click', function () {
     popup.style.display = 'none';
     video.style.display = 'block';
+    video.children[0].play();
   })
 
   about.addEventListener('click', function () {
     popup.style.display = 'block';
     video.style.display = 'none';
+    video.children[0].pause();
   });
 
   window.addEventListener("orientationchange", function() {
