@@ -238,7 +238,7 @@ a br {
 
 @media (orientation: landscape) and (max-height: 650px) {
   .video {
-    margin: 220px 15px 60px 15px;
+    margin: 220px 0 60px 0;
     right: auto;
     left: auto;
     top: auto;
