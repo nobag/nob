@@ -50,11 +50,11 @@ a br {
 }
 
 .logo:after {
-    content: "";
-    width: 340px;
-    height: 80px;
-    background: url("../media/nob.svg") no-repeat;
-    display: inline-block;
+  content: "";
+  width: 340px;
+  height: 80px;
+  background: url("../media/nob.svg") no-repeat;
+  display: inline-block;
 }
 
 .video {
@@ -74,11 +74,11 @@ a br {
   width: 100%;
   margin: 70px 0 0 0;
   display: none;
-  max-width: 691px;
+  max-width: 660px;
 }
 
 .about_text {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 #about_button:hover, .close_btn:hover {
@@ -87,17 +87,14 @@ a br {
 
 .check {
   position: relative;
-  max-width: 17px;
+  max-width: 15px;
   width: 100%;
-  margin: 0;
+  margin: 0 5px 0 0;
 }
 
 .about_credits {
   width: 100%;
   max-width: 380px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 @media (max-height: 340px) {
@@ -184,7 +181,7 @@ a br {
 
 @media (max-width: 625px) {
   .location {
-    max-width: 460px;
+    max-width: 440px;
   }
 }
 
