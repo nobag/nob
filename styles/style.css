@@ -59,20 +59,20 @@ a br {
 
 .video {
   position: absolute;
-  right: 110px;
-  bottom: 110px;
-  max-width: 325px;
+  right: 0;
+  bottom: 160px;
+  max-width: 690px;
   width: 100%;
 }
 
-.video img {
+.video video {
   width: 100%;
 }
 
 .about_popup {
   position: relative;
   width: 100%;
-  margin: 70px 0 0 0;
+  margin: 50px 0 0 0;
   display: none;
   max-width: 660px;
 }
@@ -109,19 +109,6 @@ a br {
   }
 }
 
-@media (max-height: 720px) {
-  .video {
-    max-width: 300px;
-  }
-}
-
-@media (max-height: 890px) {
-  .video {
-    right: 50px;
-    bottom: 40px;
-  }
-}
-
 @media (max-width: 430px) {
   body {
     font-size: 19px;
@@ -138,8 +125,8 @@ a br {
   }
 
   .logo:after {
-      width: 240px;
-      height: 60px;
+    width: 240px;
+    height: 60px;
   }
 
   .video {
@@ -147,7 +134,7 @@ a br {
     right: auto !important;
     bottom: auto !important;
     margin-top: 90% !important;
-    margin-bottom: 150px !important;
+    margin-bottom: 160px !important;
   }
 
   .about_popup {
@@ -170,12 +157,6 @@ a br {
 @media (max-width: 785px) {
   .location {
     max-width: 600px;
-  }
-}
-
-@media (max-height: 740px) and (min-height: 651px) {
-  .video {
-    max-width: 300px !important;
   }
 }
 
