@@ -58,6 +58,7 @@ a br {
 }
 
 .video {
+  background-color: white;
   border: none;
   position: absolute;
   right: 0;
