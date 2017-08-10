@@ -58,6 +58,7 @@ a br {
 }
 
 .video {
+  border: none;
   position: absolute;
   right: 0;
   bottom: 160px;
@@ -66,6 +67,7 @@ a br {
 }
 
 .video video {
+  border: none;
   width: 100%;
 }
 
