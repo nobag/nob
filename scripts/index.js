@@ -21,12 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
   });
 
-  window.onscroll = function() {
-    if (video.children[0].paused) {
-      video.children[0].play();
-    }
-  }
-
   video.children[0].addEventListener('click', function(e) {
     if (e.target.paused) {
       e.target.play();
