@@ -67,6 +67,7 @@ a br {
 }
 
 .video video {
+  background-color: white;
   border: none;
   width: 100%;
 }
