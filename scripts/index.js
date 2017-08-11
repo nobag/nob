@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     popup.style.display = 'none';
     video.style.display = 'block';
     video.children[0].play();
-  })
+  });
 
   about.addEventListener('click', function () {
     popup.style.display = 'block';
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       e.target.pause();
     }
-  })
+  });
 
   if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Linux armv6l') {
     logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
