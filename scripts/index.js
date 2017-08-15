@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
       close = document.querySelector('.close_btn'),
        logo = document.querySelector('.logo');
 
+  video.children[0].volume = 0.75;
+
   close.addEventListener('click', function () {
     popup.style.display = 'none';
     video.style.display = 'block';
