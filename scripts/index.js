@@ -5,16 +5,31 @@ document.addEventListener('DOMContentLoaded', function () {
       close = document.querySelector('.close_btn'),
        logo = document.querySelector('.logo');
 
-  video.children[0].volume = 0.75;
+  videoEl = document.createElement('video');
+  videoEl.autoplay = true;
+  videoEl.preload = 'auto';
+  videoEl.loop = true;
+  videoEl.poster = './media/poster.png';
+  videoEl.src = './media/video/nob_min.mp4';
+  videoEl.volume = 0.75;
+  video.appendChild(videoEl);
 
   close.addEventListener('click', function () {
     popup.style.display = 'none';
     video.style.display = 'block';
+    videoEl = document.createElement('video');
+    videoEl.autoplay = true;
+    videoEl.preload = 'auto';
+    videoEl.loop = true;
+    videoEl.poster = './media/poster.png';
+    videoEl.src = './media/video/nob_min.mp4';
+    videoEl.volume = 0.75;
+    video.appendChild(videoEl);
   });
 
   about.addEventListener('click', function () {
     popup.style.display = 'block';
-    video.style.display = 'none';
+    video.innerHTML = '';
   });
 
   window.addEventListener("orientationchange", function() {
