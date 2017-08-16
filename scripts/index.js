@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   videoEl.loop = true;
   videoEl.poster = './media/poster.png';
   videoEl.src = './media/video/nob_min.mp4';
+  videoEl.addClassName = 'video';
   videoEl.volume = 0.75;
   video.appendChild(videoEl);
 
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     videoEl.loop = true;
     videoEl.poster = './media/poster.png';
     videoEl.src = './media/video/nob_min.mp4';
+    videoEl.addClassName = 'video';
     videoEl.volume = 0.75;
     video.appendChild(videoEl);
   });
