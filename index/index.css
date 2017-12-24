@@ -1,0 +1,38 @@
+body {
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  height: 100%;
+  overflow: auto;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.main {
+  padding: 15px;
+}
+
+.list {
+  padding-left: 20px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  list-style: none;
+}
