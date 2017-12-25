@@ -1,45 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
   var popup = document.querySelector('.about_popup'),
       video = document.querySelector('.video'),
+      videoEl = video.children[0],
       about = document.querySelector('#about_button'),
       close = document.querySelector('.close_btn'),
        logo = document.querySelector('.logo');
 
-  videoEl = document.createElement('video');
-  videoEl.autoplay = true;
-  videoEl.preload = 'auto';
-  videoEl.loop = true;
-  videoEl.poster = './media/poster.png';
-  videoEl.src = './media/video/nob_min.mp4';
-  videoEl.addClassName = 'video';
-  videoEl.volume = 0.75;
-  video.appendChild(videoEl);
+  window.isTouch = false;
 
   close.addEventListener('click', function () {
     popup.style.display = 'none';
     video.style.display = 'block';
-    videoEl = document.createElement('video');
-    videoEl.autoplay = true;
-    videoEl.preload = 'auto';
-    videoEl.loop = true;
-    videoEl.poster = './media/poster.png';
-    videoEl.src = './media/video/nob_min.mp4';
-    videoEl.addClassName = 'video';
-    videoEl.volume = 0.75;
-    video.appendChild(videoEl);
+    if (!window.isTouch) {
+      videoEl.play();
+    }
   });
 
   about.addEventListener('click', function () {
     popup.style.display = 'block';
-    video.innerHTML = '';
+    video.style.display = 'none';
+    videoEl.pause();
   });
 
   window.addEventListener("orientationchange", function() {
     logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
   });
 
-  if (navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Linux armv6l') {
+  window.addEventListener('touchstart', function onFirstTouch() {
+    window.isTouch = true;
     logo.style.top = (window.innerHeight / 2) - (logo.clientHeight / 6) + 'px';
-    video.children[0].src = './media/video/nob_min.mp4';
-  }
+    videoEl.setAttribute('controls', '');
+    videoEl.setAttribute('playsinline', '');
+    window.removeEventListener('touchstart', onFirstTouch, false);
+  }, false);
+
+  setTimeout(function() {
+    if (!window.isTouch) {
+      videoEl.setAttribute('autoplay', '');
+      videoEl.setAttribute('loop', '');
+    }
+  }, 10);
 });
